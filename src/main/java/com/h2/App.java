@@ -6,9 +6,27 @@ package com.h2;
  */
 public class App 
 {
-    public static void main( String[] args )
+
+
+    public static void main( String[] args)
     {
-        System.out.println( "Hello World!" );
+       String[] creditsAsString = args[0].split(",");
+       String[] debitsAsString = args[1].split(",");
+
+       float[] credits = new float[creditsAsString.length];
+        float[] debits = new float[debitsAsString.length];
+       for (int i = 0; i < creditsAsString.length; i++) {
+           credits[i] = Float.parseFloat(creditsAsString[i]);
+       }
+
+        for (int i = 0; i < debitsAsString.length; i++) {
+            debits[i] = Float.parseFloat(debitsAsString[i]);
+        }
+        System.out.println("sup");
+
+
+
+
     }
 
     public static int doubleTheNumber(int number) {
