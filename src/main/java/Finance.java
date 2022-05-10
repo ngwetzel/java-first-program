@@ -13,7 +13,7 @@ public class Finance {
 
     public final static Map<String, String> commandsToUsage = Map.of(BEST_LOAN_RATES, "usage: bestLoanRates", SAVINGS_CALCULATOR, "usage: savingsCalculator <credits separated by ','> <debits separated by ','>",
             MORTGAGE_CALCULATOR, "usage: mortgageCalculator <loanAmount> <termInYears> <annualRate>");
-
+//comment so that this will work
 
     private static boolean validateCommandArguments(String[] args) {
         switch (args[0]) {
